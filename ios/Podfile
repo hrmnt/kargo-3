@@ -13,6 +13,10 @@ target 'kargo' do
   
 
   platform :ios, '9.0'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
   target 'kargoTests' do
     inherit! :search_paths
     # Pods for testing
