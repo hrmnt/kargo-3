@@ -10,8 +10,22 @@
     "appcenter": "1.13.0",
     "appcenter-analytics": "1.13.0",
     "appcenter-crashes": "1.13.0",
+    "mobx": "^5.1.0",
+    "mobx-logger": "^0.7.1",
+    "mobx-persist": "^0.4.1",
+    "mobx-react": "^5.4.3",
     "react": "16.6.3",
-    "react-native": "0.58.6"
+    "react-native": "0.58.6",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-grid-component": "^1.1.0",
+    "react-native-keyboard-aware-scroll-view": "^0.8.0",
+    "react-native-segment-control": "github:hrmnt/react-native-segment-control",
+    "react-native-snap-carousel": "^3.7.5",
+    "react-native-star-rating": "^1.1.0",
+    "react-native-text-input-mask": "^0.8.0",
+    "react-native-vector-icons": "^6.3.0",
+    "react-navigation": "^3.3.2",
+    "react-stars": "^2.2.5"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.4.0",
