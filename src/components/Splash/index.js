@@ -1,7 +1,6 @@
 import React from "react";
 import {View, Text, StyleSheet} from "react-native";
 import {
-    StackActions,
     NavigationActions
 } from 'react-navigation';
 import {AuthStore} from "../../stores"
@@ -13,7 +12,7 @@ class Splash extends  React.Component{
         const { navigation, authStore } = this.props;
         const { session } = authStore;
         if(session !== null){
-            const resetAction = StackActions.reset({
+            const resetAction = NavigationActions.reset({
                 index: 0,
                 key:null,
                 actions: [NavigationActions.navigate({ routeName: 'MainTabs' })],
@@ -21,7 +20,7 @@ class Splash extends  React.Component{
             navigation.dispatch(resetAction);
         }
         else{
-            const resetAction = StackActions.reset({
+            const resetAction = NavigationActions.reset({
                 index: 0,
                 actions: [NavigationActions.navigate({ routeName: 'SignIn' })],
             });

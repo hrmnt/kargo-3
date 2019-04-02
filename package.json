@@ -24,16 +24,18 @@
     "react-native-star-rating": "^1.1.0",
     "react-native-text-input-mask": "^0.8.0",
     "react-native-vector-icons": "^6.3.0",
-    "react-navigation": "^3.3.2",
+    "react-navigation": "1.0.3",
     "react-stars": "^2.2.5"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.4.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.6.0",
     "babel-preset-mobx": "^2.0.0",
     "jest": "24.6.0",
     "metro-react-native-babel-preset": "0.53.1",
+    "react-native-dotenv": "^0.2.0",
     "react-test-renderer": "16.6.3"
   },
   "jest": {

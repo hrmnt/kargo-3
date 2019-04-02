@@ -1,7 +1,11 @@
 import {Home, DetailedProduct, CompanyDetailed, Profile, Splash ,SignIn, SignUp, SignUpContinue} from "../components";
-import { createBottomTabNavigator, createAppContainer, createStackNavigator } from 'react-navigation';
 
-const AuthContainer = createStackNavigator({
+import {
+    NavigationScreenConfig,
+    StackNavigator,
+    TabNavigator,
+} from 'react-navigation';
+const AuthContainer = StackNavigator({
     Splash:{
         screen:Splash
     },
@@ -16,7 +20,7 @@ const AuthContainer = createStackNavigator({
     }
 },{ headerMode: 'none' })
 
-const HomeContainer = createStackNavigator({
+const HomeContainer = StackNavigator({
     Home:{
         screen:Home
     },   
@@ -28,18 +32,21 @@ const HomeContainer = createStackNavigator({
     }
 }, { headerMode: 'none' })
 
-const ProfileContainer = createStackNavigator({
+const ProfileContainer = StackNavigator({
     Profile:{
         screen: Profile
     }
 },{ headerMode: 'none' })
 
-const TabNavigation = createBottomTabNavigator({
-    Home: HomeContainer,
-    Profile: ProfileContainer,
+const TabNavigation = TabNavigator({
+    Home: {
+        screen:HomeContainer
+    },
+    Profile:{
+        screen:ProfileContainer},
 })
 
-const Router = createStackNavigator({
+const Router = StackNavigator({
     AuthStack:{
         screen:AuthContainer
     },
@@ -48,7 +55,7 @@ const Router = createStackNavigator({
     }
 },{ headerMode: 'none' })
 
-const Apps = createAppContainer(Router);
+const Apps = Router;
 
 
 export default Apps;
